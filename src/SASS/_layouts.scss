@@ -1,0 +1,129 @@
+.maincrypto__container{
+    
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    width: 100%;
+    grid-gap: 1rem;
+    padding: 1.3rem;
+  
+}
+.cardcoins{
+    
+   padding: 0.5rem;
+   min-height: 8rem;
+   background-color: rgb(236, 236, 236);
+   transition: all .2s;
+}
+.cardcoins:hover{
+    -webkit-box-shadow: 3px 9px 26px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 9px 26px -5px rgba(0,0,0,0.75);
+box-shadow: 3px 9px 26px -5px rgba(0,0,0,0.75);
+transform: scale(1.03);
+}
+.cardcoins__primary{
+display: flex;
+justify-content: space-between;
+align-items: center;
+div{
+    display: flex;
+    h3{
+        margin-right: .4rem;
+    }
+}
+font-size: 1.4rem;
+    img{
+        width:3.4rem;
+        height: 3.4rem;
+        
+    }
+}
+.mainnews__container{
+    
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    width: 100%;
+   
+   grid-gap: 1rem;
+    padding: 1.3rem;  
+}
+.newscard{
+    
+    padding: .8rem;
+   
+    min-height: 10rem;
+    background-color: green;
+    background-color: rgb(236, 236, 236);
+    transition: all .2s;
+    img{
+        width: 100px;
+        height: 100px;
+    }
+    &__details{
+        font-size: .6rem;
+    }
+ }
+ .newscardblack{
+     color: black;
+    text-decoration: none;
+
+ }
+ .newscard__details{ 
+     p{
+         font-size: 1.5rem;
+         padding: .6rem 0;
+     }
+ }
+ .newscard__primary{ 
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-end;
+     p{
+        font-size: 1rem;
+        padding: .6rem 0;
+        font-weight: 900;
+        text-transform: uppercase;
+     }
+ }
+
+ .mobile_showmore{
+    display: none;
+}
+
+
+ @media screen and (max-width:655px){
+   .maincrypto__container__secondary{
+       display: none;
+   }
+   .mobile_showmore{
+       display: block;
+       text-align: end;
+       font-size: 2rem;
+       font-weight: 600;
+       cursor: pointer;
+       margin:1.3rem ;
+       color: rgb(97, 97, 255);
+   }
+ }
+
+ @media screen and (max-width:360px) {
+     .globalcrypto{
+         text-align: center;
+     }
+     .globalcrypto div{
+         margin-bottom: 2rem;
+     }
+     .Main__container__primary{
+         text-align: center;
+     }
+     .Main__container,.toptencry{
+        display: flex;
+        flex-direction: column;
+     }
+     .maincrypto__container__primary, .Main__container__primary{
+         text-align: center;
+         border: none;
+     }
+     
+ }
